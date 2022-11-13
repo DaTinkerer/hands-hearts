@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,800;8..60,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  max-width: 1500px;
+}
+
+.header {
+  background: #4c7e4f;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 50px;
+  place-items: center;
+}
+
+.fa-bars {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav {
+  transform: translateX(100vw);
+}
+
+.logo {
+  color: #fff;
+  font-family: "Zilla Slab", serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.hero-section {
+  padding-top: 7em;
+  padding-bottom: 15rem;
+  background: #4c7e4f;
+}
+.hero-section .heading {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+.hero-section .sub-heading {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.hero-section .cta-div {
+  margin-top: 4rem;
+}
+.hero-section .cta-div .cta {
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 1.1rem;
+}
+.hero-section .cta-div .secondary-cta {
+  color: #000;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  padding: 1.1rem;
+  margin-left: 2.5rem;
+}
+.hero-section .img-container {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
