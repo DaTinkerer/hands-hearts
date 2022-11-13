@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,800;8..60,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700;8..60,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 body {
   margin: 0;
@@ -9,8 +9,8 @@ body {
 }
 
 .wrapper {
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   max-width: 1500px;
 }
 
@@ -19,6 +19,7 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 .inner-header {
@@ -52,6 +53,7 @@ body {
 .hero-section .heading {
   color: #fff;
   font-family: "Merriweather", serif;
+  font-weight: 800;
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
 .hero-section .sub-heading {
@@ -59,6 +61,8 @@ body {
   font-size: 1.1rem;
 }
 .hero-section .cta-div {
+  display: flex;
+  gap: 3rem;
   margin-top: 4rem;
 }
 .hero-section .cta-div .cta {
@@ -69,6 +73,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   padding: 1.1rem;
+  width: 110px;
 }
 .hero-section .cta-div .secondary-cta {
   color: #000;
@@ -77,10 +82,152 @@ body {
   border: none;
   font-family: "Poppins", sans-serif;
   padding: 1.1rem;
-  margin-left: 2.5rem;
+  width: 110px;
 }
 .hero-section .img-container {
   display: none;
+}
+
+.about {
+  margin-top: 8rem;
+  position: relative;
+}
+.about .watermark {
+  color: #4c7e4f;
+  opacity: 0.12;
+  font-size: 8rem;
+  font-family: "Source Serif 4", serif;
+  font-weight: 500;
+  position: absolute;
+  top: -11rem;
+  left: -2.5rem;
+}
+.about .section-title {
+  font-family: "Source Serif 4", serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 6rem;
+}
+.about .section-title .colored-text {
+  color: #4c7e4f;
+}
+
+.testimonials {
+  margin-top: 12rem;
+  padding-top: 10em;
+  padding-bottom: 7rem;
+  position: relative;
+  background-color: #4c7e4f;
+}
+.testimonials .circle {
+  background: #85bc77;
+  border-radius: 50%;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0.8rem;
+  padding: 2.8em;
+  position: absolute;
+  top: -78px;
+}
+.testimonials .testimonial-content {
+  color: #fff;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+.testimonials .testimonial-content .card {
+  background: #3b6430;
+  border-radius: 4%;
+  max-width: 230px;
+  padding: 2rem;
+}
+.testimonials .testimonial-content .card .card-content {
+  margin-bottom: 6rem;
+}
+
+.services {
+  margin-top: 8rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.services .watermark {
+  color: #4c7e4f;
+  opacity: 0.12;
+  font-size: 8rem;
+  font-family: "Source Serif 4", serif;
+  font-weight: 500;
+  position: absolute;
+  top: -9rem;
+  left: -2.5rem;
+}
+.services .section-title {
+  font-family: "Source Serif 4", serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 8rem;
+}
+.services .section-title .colored-text {
+  color: #4c7e4f;
+}
+.services .services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.services .services-content .service .fa-book {
+  color: #4c7e4f;
+  font-size: 1.5rem;
+  rotate: -25deg;
+}
+.services .services-content .service .service-title {
+  font-weight: bold;
+}
+
+.contact {
+  margin-top: 8rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.contact .watermark {
+  color: #4c7e4f;
+  opacity: 0.12;
+  font-size: 8rem;
+  font-family: "Source Serif 4", serif;
+  font-weight: 500;
+  position: absolute;
+  top: -9rem;
+  left: -2.5rem;
+}
+.contact .section-title {
+  font-family: "Source Serif 4", serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 6rem;
+}
+.contact .section-title .colored-text {
+  color: #4c7e4f;
+}
+.contact .form .label-cont {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.contact .form .input, .contact .form .message {
+  width: 97.9%;
+  padding: 5px;
+  background: #edf5eb;
+  border: none;
+}
+.contact .form .input:focus, .contact .form .message:focus {
+  outline: 2px solid #4c7e4f;
+}
+.contact .form .submit {
+  background: #4c7e4f;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 3rem;
+  padding: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
