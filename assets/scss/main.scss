@@ -54,7 +54,8 @@ body {
 
 .hero-section {
   padding-top: 7em;
-  padding-bottom: 15rem;
+  //   padding-bottom: 15rem;
+  min-height: 100vh;
   background: $dark-green;
   .heading {
     color: #fff;
@@ -281,6 +282,9 @@ body {
 .footer {
   color: #fff;
   background: $darker-green;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  margin-top: 5rem;
 
   .inner-footer {
     display: flex;
@@ -302,7 +306,7 @@ body {
       }
       a {
         color: #fff;
-        display: block;
+        display: table;
         margin-bottom: 0.7rem;
         text-decoration: none;
       }
