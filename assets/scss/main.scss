@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700;8..60,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
@@ -227,25 +227,85 @@ body {
       margin-bottom: 1rem;
       margin-top: 2rem;
     }
-    .input, .message {
-        width: 97.9%;
-        padding: 5px;
-        background: $super-light-green;
-        border: none;
-        &:focus {
-            outline: 2px solid $dark-green;
-        }
+    .input,
+    .message {
+      width: 97.9%;
+      padding: 5px;
+      background: $super-light-green;
+      border: none;
+      &:focus {
+        outline: 2px solid $dark-green;
+      }
     }
 
     .submit {
-        background: $dark-green;
-        cursor: pointer;
-        border: none;
-        color: #fff;
-        font-weight: 700;
-        margin-top: 3rem;
-        padding: 1em;
+      background: $dark-green;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      margin-top: 3rem;
+      padding: 1em;
+    }
+  }
+}
+// other contact
 
+.other-contact {
+  padding-top: 2rem;
+  .secondary-title {
+    font-family: $ss4;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  .contact-info {
+    .info {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .fa-envelope,
+    .fa-phone {
+      color: $dark-green;
+      font-size: 1.5rem;
+    }
+  }
+}
+// footer
+
+.footer {
+  color: #fff;
+  background: $darker-green;
+
+  .inner-footer {
+    display: flex;
+    flex-direction: column;
+    .footer-logo {
+      font-family: $zilla;
+      font-weight: bold;
+    }
+    .links-cont {
+      gap: 2rem;
+      display: flex;
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .list-title {
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      a {
+        color: #fff;
+        display: block;
+        margin-bottom: 0.7rem;
+        text-decoration: none;
+      }
     }
   }
 }
