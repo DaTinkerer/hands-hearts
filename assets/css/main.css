@@ -11,7 +11,13 @@ body {
 .wrapper {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  max-width: 1500px;
+  max-width: 1400px;
+}
+@media screen and (min-width: 1490px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .header {
@@ -35,7 +41,9 @@ body {
 }
 
 .nav {
-  transform: translateX(100vw);
+  position: absolute;
+  top: 0;
+  right: -200%;
 }
 
 .logo {
@@ -46,24 +54,30 @@ body {
 }
 
 .hero-section {
-  padding-top: 7em;
-  min-height: 100vh;
   background: #4c7e4f;
+  padding-top: 7em;
+}
+.hero-section .inner-hero {
+  position: relative;
+  padding-bottom: 35rem;
 }
 .hero-section .heading {
   color: #fff;
+  display: block;
   font-family: "Merriweather", serif;
   font-weight: 800;
   font-size: clamp(2.5rem, 5vw, 4rem);
+  max-width: 800px;
 }
 .hero-section .sub-heading {
   color: #fff;
   font-size: 1.1rem;
+  max-width: 460px;
 }
 .hero-section .cta-div {
   display: flex;
   gap: 3rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .hero-section .cta-div .cta {
   color: #fff;
@@ -84,12 +98,30 @@ body {
   padding: 1.1rem;
   width: 110px;
 }
-.hero-section .img-container {
+.hero-section .img {
   display: none;
+}
+@media screen and (min-width: 800px) {
+  .hero-section .img {
+    border-top-left-radius: 310px;
+    border-top-right-radius: 310px;
+    display: block;
+    max-width: 621px;
+    max-height: 972px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: -350px;
+  }
+}
+@media screen and (min-width: 800px) and (min-width: 1142px) {
+  .hero-section .img {
+    right: 0;
+  }
 }
 
 .about {
-  margin-top: 8rem;
+  padding-top: 8rem;
   position: relative;
 }
 .about .watermark {
@@ -99,7 +131,7 @@ body {
   font-family: "Source Serif 4", serif;
   font-weight: 500;
   position: absolute;
-  top: -11rem;
+  top: -1rem;
   left: -2.5rem;
 }
 .about .section-title {
@@ -110,6 +142,9 @@ body {
 }
 .about .section-title .colored-text {
   color: #4c7e4f;
+}
+.about .pattern-column {
+  display: none;
 }
 
 .testimonials {
@@ -213,8 +248,8 @@ body {
 }
 .contact .form .input,
 .contact .form .message {
-  width: 97.9%;
-  padding: 5px;
+  width: 94.3%;
+  padding: 0.8em;
   background: #edf5eb;
   border: none;
 }
@@ -242,7 +277,7 @@ body {
 }
 .other-contact .contact-info .info {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 .other-contact .contact-info a {
