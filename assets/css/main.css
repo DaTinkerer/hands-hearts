@@ -32,7 +32,6 @@ body {
   display: flex;
   justify-content: space-between;
   min-height: 70px;
-  padding: 0.4rem 0;
   place-items: center;
   position: relative;
 }
@@ -67,19 +66,20 @@ body {
 }
 .nav a {
   color: #000;
+  display: block;
+  width: 50px;
   text-decoration: none;
 }
 .nav a:hover {
   font-weight: bold;
 }
 .nav .nav-cta {
-  background: #4c7e4f;
-  border: none;
-  border-radius: 100px;
-  color: #fff;
+  background: none;
+  border: solid 2px #4c7e4f;
+  color: #4c7e4f;
   cursor: pointer;
   font-weight: bold;
-  padding: 1rem;
+  padding: 0.4rem;
   width: 110px;
 }
 .nav .x-mark {
@@ -105,8 +105,9 @@ body {
     text-decoration: none;
   }
   .nav .nav-cta {
-    background: #fff;
-    color: #4c7e4f;
+    background: none;
+    color: #d0ffc3;
+    border: solid 2px #d0ffc3;
   }
   .nav .x-mark {
     display: none;

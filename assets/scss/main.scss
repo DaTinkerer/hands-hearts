@@ -38,7 +38,6 @@ body {
   display: flex;
   justify-content: space-between;
   min-height: 70px;
-  padding: 0.4rem 0;
   place-items: center;
   position: relative;
 }
@@ -69,19 +68,22 @@ body {
   }
   a {
     color: #000;
+    display: block;
+    width: 50px;
     &:hover {
       font-weight: bold;
+      //text-decoration: underline 2px;
+      //text-underline-offset: 10px;
     }
     text-decoration: none;
   }
   .nav-cta {
-    background: $dark-green;
-    border: none;
-    border-radius: 100px;
-    color: #fff;
+    background: none;
+    border: solid 2px $dark-green;
+    color: $dark-green;
     cursor: pointer;
     font-weight: bold;
-    padding: 1rem;
+    padding: 0.4rem;
     width: 110px;
   }
   .x-mark {
@@ -106,8 +108,9 @@ body {
       text-decoration: none;
     }
     .nav-cta {
-      background: #fff;
-      color: $dark-green;
+      background: none;
+      color: #d0ffc3;
+      border: solid 2px #d0ffc3;
     }
     .x-mark {
       display: none;
