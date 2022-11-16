@@ -31,19 +31,90 @@ body {
 .inner-header {
   display: flex;
   justify-content: space-between;
-  max-height: 50px;
+  min-height: 70px;
+  padding: 0.4rem 0;
   place-items: center;
+  position: relative;
 }
 
 .fa-bars {
   color: #fff;
   cursor: pointer;
 }
+@media screen and (min-width: 800px) {
+  .fa-bars {
+    display: none;
+  }
+}
 
 .nav {
+  background: #f8f8f8;
+  width: 50%;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   right: -200%;
+  padding: 2em;
+  transition: right 0.4s ease-in-out;
+}
+.nav ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+  list-style-type: none;
+  padding: 0;
+}
+.nav a {
+  color: #000;
+  text-decoration: none;
+}
+.nav a:hover {
+  font-weight: bold;
+}
+.nav .nav-cta {
+  background: #4c7e4f;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1rem;
+  width: 110px;
+}
+.nav .x-mark {
+  cursor: pointer;
+  stroke: #000;
+  margin-left: -0.7rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .nav {
+    right: 0;
+    background: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+  .nav ul {
+    flex-direction: row;
+    place-items: center;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav .nav-cta {
+    background: #fff;
+    color: #4c7e4f;
+  }
+  .nav .x-mark {
+    display: none;
+  }
+}
+
+.nav.active {
+  right: -1.5rem;
 }
 
 .logo {
@@ -56,6 +127,7 @@ body {
 .hero-section {
   background: #4c7e4f;
   padding-top: 7em;
+  overflow: hidden;
 }
 .hero-section .inner-hero {
   position: relative;
@@ -80,9 +152,9 @@ body {
   margin-top: 6rem;
 }
 .hero-section .cta-div .cta {
-  color: #fff;
+  color: #4c7e4f;
   cursor: pointer;
-  background: #000;
+  background: #d0ffc3;
   border: none;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -90,9 +162,9 @@ body {
   width: 110px;
 }
 .hero-section .cta-div .secondary-cta {
-  color: #000;
+  color: #fff;
   cursor: pointer;
-  background: #fff;
+  background: #000;
   border: none;
   font-family: "Poppins", sans-serif;
   padding: 1.1rem;
@@ -111,7 +183,7 @@ body {
     height: auto;
     position: absolute;
     bottom: 0;
-    right: -350px;
+    right: -320px;
   }
 }
 @media screen and (min-width: 800px) and (min-width: 1142px) {
@@ -191,7 +263,7 @@ body {
   font-size: 8rem;
   font-family: "Source Serif 4", serif;
   font-weight: 500;
-  position: absolute;
+  position: aroup Reactionbsolute;
   top: -9rem;
   left: -2.5rem;
 }
@@ -248,7 +320,7 @@ body {
 }
 .contact .form .input,
 .contact .form .message {
-  width: 94.3%;
+  width: 98%;
   padding: 0.8em;
   background: #edf5eb;
   border: none;
@@ -280,9 +352,15 @@ body {
   gap: 1rem;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 312px) {
+  .other-contact .contact-info .info {
+    flex-direction: column;
+  }
+}
 .other-contact .contact-info a {
   text-decoration: none;
   color: #000;
+  display: block;
 }
 .other-contact .contact-info .fa-envelope,
 .other-contact .contact-info .fa-phone {
