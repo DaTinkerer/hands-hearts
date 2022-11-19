@@ -11,6 +11,10 @@ const closeMenu = () => {
     nav.classList.remove("active");
   }
 };
+const close = () => {
+  nav.classList.remove("active");
+};
 bars.addEventListener("click", showCloseMenu);
 xmark.addEventListener("click", showCloseMenu);
+nav.addEventListener("click", close);
 addEventListener("resize", closeMenu);
