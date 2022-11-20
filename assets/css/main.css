@@ -258,6 +258,7 @@ body {
 .about .about-text {
   max-width: 444px;
   line-height: 1.8rem;
+  margin-bottom: 6rem;
 }
 .about .pattern-column {
   display: none;
@@ -311,7 +312,6 @@ body {
 }
 .testimonials .testimonial-content .card {
   background: #3b6430;
-  border-radius: 4%;
   max-width: 230px;
   padding: 2rem;
 }

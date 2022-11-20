@@ -257,6 +257,7 @@ body {
   .about-text {
     max-width: 444px;
     line-height: 1.8rem;
+    margin-bottom: 6rem;
   }
   .pattern-column {
     display: none;
@@ -305,7 +306,6 @@ body {
     }
     .card {
       background: $darker-green;
-      border-radius: 4%;
       max-width: 230px;
       padding: 2rem;
       .card-content {
